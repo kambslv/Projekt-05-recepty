@@ -34,7 +34,170 @@ body {
 }
 
 
+
 /* ------------------------------- */
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
 
+.recepty{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#burger{
+    min-height: 200px;
+    width: auto;
+    background-image:url(images/burger.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#sushi{
+    background-image:url(images/sushi.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#kure{
+    background-image:url(images/kure.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#chilli{
+    background-image:url(images/rajcata.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#grilovacka{background-image:url(images/grilovani.jpg);
+    background-size: cover;
+    background-position: center;}
+
+
+/* -------------BASIC SETTINGS----------------- */
+
+
+.recepty{
+    display: flex;
+    flex-direction: column;
+}
+
+.others{
+    display: flex;
+    flex-direction: column;
+}
+
+.toprecept .layout{
+    min-height: 200px;
+}
+
+.toprecept .nazev{
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.others .layout{
+    min-height: 90px;
+}
+
+.others .nazev{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+
+.layout{
+    position: relative;
+}
+
+.kategorie{
+    position: absolute;
+    top:20px;
+    left:20px;
+}
+
+.komentare{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    
+}
+
+.nazev{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+
+/* -------------TABLET----------------- */
+
+@media only screen and (min-width: 500px) and (max-width: 1000px){
+
+
+.toprecept .layout{
+    min-height: 250px;
+}
+
+.others .layout{
+    min-height: 150px;
+}
+
+.others{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.layout{
+    width: 50vw;
+    padding: 20px;
+}
+
+.toprecept .nazev{
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.others .nazev{
+    font-size: 22px;
+    font-weight: 800;
+}
+
+}
+
+
+@media screen and (min-width: 1001px){
+
+.recepty{
+    display: flex;
+    flex-direction: row;
+}
+
+.toprecept{
+    border: red 5px solid;
+    width: 35vw;
+}
+
+.others{
+    border: blue 5px solid;
+    width: 65vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.others .layout{
+    border: 5px black solid;
+
+}
+
+
+
+
+}
+/*POZNAMKY:
+
+}
